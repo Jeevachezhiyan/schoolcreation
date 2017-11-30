@@ -1,0 +1,55 @@
+<h3>Registered Student Information</h3>
+<div class="order_history">
+<?php if(empty($block->getSellerId())){?>
+<h3>No Student Information Found....</h3>
+<?php }else{?>
+<table>
+  <tr>
+    <th>Seller ID</th>
+    <th>Seller Name</th>
+    <th>Seller Email</th>
+  </tr>
+  <?php foreach($block->getSellerId() as $seller_id){?>
+  <tr>
+
+    <td><?php echo $seller_id['seller_id']?></td>
+    <td><?php echo  $seller_id['seller_first_name'].' '.$seller_id['seller_last_name']?></td>
+    <td><?php echo $seller_id['seller_email']?></td>
+  </tr>
+<?php }?>
+
+</table>
+<?php }?>
+</div>
+<br>
+<br>
+<h3>Order Information</h3>
+<div class="order_history">
+<?php if(empty($block->getOrder())){?>
+      <h3>No Orders Found...</h3>
+<?php }else{?>
+
+<table>
+  <tr>
+    <th>Customer</th>
+    <th>Total Amount</th>
+    <th>Quantity</th>
+  </tr>
+  <?php foreach($block->getOrder() as $order){?>
+  <tr>
+<?php
+if(empty($order['customer_firstname']))
+{ 
+   ?> <td>Guest</td><?php
+}else{
+?>
+    <td><?php echo $order['customer_firstname'].' '.$order['customer_lastname']?></td>
+<?php }?>
+    <td><?php echo $order['order_currency_code'].' '.$order['grand_total']?></td>
+    <td><?php echo round($order['total_qty_ordered'])?></td>
+  </tr>
+  <?php } ?>
+</table>
+<?php } ?>
+</div>
+

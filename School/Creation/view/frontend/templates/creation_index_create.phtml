@@ -1,0 +1,228 @@
+<div class="seller_page_lt">
+<div class="seller">
+<form class="form create account form-create-account" action="<?php echo $block->getBaseurl();?>creation/index/schoollogin/" method="post" id="form-validate" enctype="multipart/form-data" autocomplete="off" novalidate="novalidate">
+    <fieldset class="fieldset create info">
+        <legend class="legend"><span>SELLER REGISTRATION</span></legend><br>
+        <p>Enter the group ID from your parent letter and send emails to friends and family:</p>
+        
+
+        <div class="field field-name-firstname required">
+            <label class="label" for="firstname">
+                <span>School ID</span>
+            </label>
+
+            <div class="control">
+                <input type="text" id="firstname" name="school_id" value="" title="First Name" class="input-text required-entry" data-validate="{required:true}" autocomplete="off" aria-required="true">
+				<button type="submit" class="action submit primary" title="Create an Account"><span>Go</span></button>
+            </div>
+        </div>
+  
+                       
+        </fieldset>
+
+    <!--<div class="actions-toolbar">
+        <div class="primary">
+            <button type="submit" class="action submit primary" title="Create an Account"><span>Go</span></button>
+        </div>
+    </div>-->
+</form>
+</div>
+
+
+
+<div class="seller_registerd">
+
+
+<form class="form create account form-create-account" action="<?php echo $block->getBaseurl();?>creation/index/sellerlogin/" method="post" id="form-validate2" enctype="multipart/form-data" autocomplete="off" novalidate="novalidate">
+    <fieldset class="fieldset create info">
+        <legend class="legend"><span>ALREADY REGISTERED?</span></legend><br>
+        <p>Send additional emails:</p>
+        
+
+        <div class="field field-name-firstname required">
+            <label class="label" for="firstname">
+                <span>Student ID</span>
+            </label>
+
+            <div class="control">
+                <input type="text" id="firstname" name="seller_id" value="" title="First Name" class="input-text required-entry" data-validate="{required:true}" autocomplete="off" aria-required="true">
+				<button type="submit" class="action submit primary" title="Create an Account"><span>Go</span></button>
+            </div>
+        </div>
+  
+                       
+        </fieldset>
+
+    <!--<div class="actions-toolbar">
+        <div class="primary">
+            <button type="submit" class="action submit primary" title="Create an Account"><span>Go</span></button>
+        </div>
+    </div>-->
+</form>
+
+</div>
+
+
+
+<!--<div class="view_online">
+<form class="form create account form-create-account" action="<?php echo $block->getBaseurl();?>creation/index/studentlogin/" method="post" id="form-validate3" enctype="multipart/form-data" autocomplete="off" novalidate="novalidate">
+    <fieldset class="fieldset create info">
+        <legend class="legend"><span>VIEW ONLINE SALES</span></legend><br>
+        <p>Students log in to view your online sales:</p>
+        
+
+        <div class="field field-name-firstname required">
+            <label class="label" for="firstname">
+                <span>Student ID</span>
+            </label>
+
+            <div class="control">
+                <input type="text" id="firstname" name="student_id" value="" title="First Name" class="input-text required-entry" data-validate="{required:true}" autocomplete="off" aria-required="true">
+				<button type="submit" class="action submit primary" title="Create an Account"><span>Go</span></button>
+            </div>
+        </div>
+  
+                       
+        </fieldset>
+
+    <div class="actions-toolbar">
+        <div class="primary">
+            <button type="submit" class="action submit primary" title="Create an Account"><span>Go</span></button>
+        </div>
+    </div>-
+</form>
+
+</div>-->
+</div>
+
+<div class="seller_page_rt">
+
+	<div class="seller_page_rt_inner">
+
+
+		<h2>Let's Get Started!</h2>
+		<h3>Choose Who You Would Like To Support:</h3>
+
+		<p>If you have been provided a Student ID, please enter it below. If you have been provided a School ID, please click the Student Registration above to register your child</p>
+
+		<form class="form create account form-create-account" action="<?php echo $block->getBaseurl();?>creation/index/shoplogin/" method="post" id="form-validate3" enctype="multipart/form-data" autocomplete="off" novalidate="novalidate">
+			<fieldset class="fieldset create info">
+				<div class="field field-name-firstname required">
+					<!--<label class="label" for="firstname">
+						<span>Seller ID</span>
+					</label>-->
+
+					<div class="control">
+						<input type="text" id="firstname" name="seller_id" value="" title="First Name" class="input-text required-entry" data-validate="{required:true}" autocomplete="off" aria-required="true" placeholder="Enter the Student Online ID">
+					</div>
+				</div>
+		  
+							   
+				</fieldset>
+
+			<div class="actions-toolbar">
+				<div class="primary">
+					<button type="submit" class="action submit primary" title="Create an Account"><span>Go</span></button>
+				</div>
+			</div>
+		</form>
+	</div>
+
+
+</div>
+
+<!-- <form class="form create account form-create-account" action="http://localhost/Shhealthychoice/creation/index/save/" method="post" id="form-validate4" enctype="multipart/form-data" autocomplete="off" novalidate="novalidate">
+    <fieldset class="fieldset create info">
+        <legend class="legend"><span>LOST YOUR ID?</span></legend><br>
+        <p>Please enter the email address you used to register. Your Seller ID will be emailed to you.</p>
+        
+
+        <div class="field field-name-firstname required">
+            <label class="label" for="firstname">
+                <span>Email ID</span>
+            </label>
+
+            <div class="control">
+                <input type="text" id="firstname" name="firstname" value="" title="First Name" class="input-text required-entry" data-validate="{required:true}" autocomplete="off" aria-required="true">
+            </div>
+        </div>
+  
+                       
+        </fieldset>
+
+    <div class="actions-toolbar">
+        <div class="primary">
+            <button type="submit" class="action submit primary" title="Create an Account"><span>Go</span></button>
+        </div>
+    </div>
+</form> -->
+
+
+
+
+
+<script>
+require([
+    'jquery',
+    'mage/mage'
+], function($){
+
+    var dataForm = $('#form-validate');
+    var ignore = null;
+    
+    dataForm.mage('validation', {
+            ignore: ignore ? ':hidden:not(' + ignore + ')' : ':hidden'
+        }).find('input:text').attr('autocomplete', 'off');
+
+});
+</script>
+
+<script>
+require([
+    'jquery',
+    'mage/mage'
+], function($){
+
+    var dataForm = $('#form-validate2');
+    var ignore = null;
+    
+    dataForm.mage('validation', {
+            ignore: ignore ? ':hidden:not(' + ignore + ')' : ':hidden'
+        }).find('input:text').attr('autocomplete', 'off');
+
+});
+</script>
+
+<script>
+require([
+    'jquery',
+    'mage/mage'
+], function($){
+
+    var dataForm = $('#form-validate3');
+    var ignore = null;
+    
+    dataForm.mage('validation', {
+            ignore: ignore ? ':hidden:not(' + ignore + ')' : ':hidden'
+        }).find('input:text').attr('autocomplete', 'off');
+
+});
+</script>
+
+<script>
+require([
+    'jquery',
+    'mage/mage'
+], function($){
+
+    var dataForm = $('#form-validate4');
+    var ignore = null;
+    
+    dataForm.mage('validation', {
+            ignore: ignore ? ':hidden:not(' + ignore + ')' : ':hidden'
+        }).find('input:text').attr('autocomplete', 'off');
+
+});
+</script>
+
+</div>

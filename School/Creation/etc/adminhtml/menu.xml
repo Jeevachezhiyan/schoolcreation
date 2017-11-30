@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../Magento/Backend/etc/menu.xsd">
+    <menu>
+        <add id="School_Creation::parent" title="School Creation" module="School_Creation" sortOrder="100" resource="School_Creation::parent"/>
+        <add id="School_Creation::index" title="School List" module="School_Creation" sortOrder="10" action="creation/index" resource="School_Creation::index" parent="School_Creation::parent"/>
+		
+    </menu>
+</config>

@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Email:etc/email_templates.xsd">
+    <template id="dropus_email_template" label="Drop Us" file="dropus_email_template.html" type="html" module="School_Creation" area="frontend"/>
+    <template id="student_email_template" label="Student Email" file="student_email_template.html" type="html" module="School_Creation" area="frontend"/>
+    <template id="seller_email_template" label="Seller Email" file="seller_email_template.html" type="html" module="School_Creation" area="frontend"/>
+    <template id="school_email_template" label="Seller Email" file="school_email_template.html" type="html" module="School_Creation" area="adminhtml"/>
+    <template id="seller_vocher_template" label="Seller Voucher Email" file="seller_vocher_template.html" type="html" module="School_Creation" area="adminhtml"/>
+    <template id="schoolfirst_email_template" label="School First Email" file="schoolfirst_email_template.html" type="html" module="School_Creation" area="frontend"/>
+</config>

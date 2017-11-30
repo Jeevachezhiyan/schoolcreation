@@ -1,0 +1,166 @@
+<p><b>Your Student ID is:<?php echo $block->getIddata();?></b></p>
+
+<p>Be sure to give your seller ID to friends and family so they can shop online!</p>
+<p class="highlight_txt">Send Emails to Family & Friends:</p>
+<?php 
+
+$category_url = $block->getCategoryCollection();
+$category_id  = implode(",",$category_url);
+
+?>
+
+<form class="form-inline seller" method="POST" action="<?php echo $block->getBaseurl();?>creation/index/selleremail/">
+	 
+	 <div class="seller_createid">
+	 <div class="fieldset create info">
+        <legend class="legend"><span>1. Create the email</span></legend><br>
+        <p>Students log in to view your online sales:</p>
+        
+
+         <div class="field field-name-firstname required">
+            <label class="label" for="firstname">
+                <span>First Name</span>
+            </label>
+
+            <div class="control">
+                <input type="text" id="firstname" name="firstname" value="<?php echo $block->getFirstName();?>" style="width:300px" title="First Name" class="input-text required-entry" data-validate="{required:true}" autocomplete="off" aria-required="true">
+            </div>
+        </div>
+
+        <div class="field field-name-lastname required">
+            <label class="label" for="lastname">
+                <span>Last Name</span>
+            </label>
+
+            <div class="control">
+                <input type="text" id="lastname" name="lastname" value="<?php echo $block->getLastName();?>" style="width:300px" title="First Name" class="input-text required-entry" data-validate="{required:true}" autocomplete="off" aria-required="true">
+            </div>
+        </div>
+
+
+        <div class="field field-name-email required">
+            <label class="label" for="email">
+                <span>Your Email</span>
+            </label>
+
+            <div class="control">
+                <input type="text" id="email" name="email" value="<?php echo $block->getEmail();?>" style="width:300px" title="First Name" class="input-text required-entry" data-validate="{required:true}" autocomplete="off" aria-required="true">
+            </div>
+        </div>
+
+        <div class="field field-name-subject required">
+            <label class="label" for="Subject">
+                <span>Subject</span>
+            </label>
+
+            <div class="control">
+                <input type="text" id="sunject" name="subject" value="" style="width:300px" title="First Name" class="input-text required-entry" data-validate="{required:true}" autocomplete="off" aria-required="true">
+            </div>
+        </div>
+
+
+        <div class="field field-name-message required">
+            <label class="label" for="message">
+                <span>Message</span>
+            </label>
+
+            <div class="control">
+                <textarea type="text" id="message" name="message" value="" style="width:300px" title="First Name" class="input-text required-entry" data-validate="{required:true}" autocomplete="off" aria-required="true"></textarea>
+            </div>
+        </div>
+
+<input type="hidden" name="purchase_url" value="<?php echo $block->getBaseurl();?>creation/index/registerseller/seller_id/<?php echo $block->getIddata();?>/school_name/<?php echo $block->getSchoolName();?>/school_id/<?php echo $block->getSchoolId();?>/seller_name/<?php echo $block->getFirstName(); ?>/category_id/<?php echo $category_id;?>">
+
+
+
+
+
+        <input type="hidden" name="seller_id" value="<?php echo $block->getIddata();?>">
+
+        
+        <div class="field field-name-message automsg required">
+            <label class="label" for="message">
+                <span>Auto Message</span>
+            </label>
+          <p>Help support “StudentID” and “School” when you make a purchase at <a href="https://www.shhealthychoice.com/">https://www.shhealthychoice.com/</a></p>
+           <p>You can shop online at:</p>
+           <p class="online_txt">
+
+           <a href="<?php echo $block->getBaseurl();?>creation/index/registerseller/seller_id/<?php echo $block->getIddata();?>/school_name/<?php echo $block->getSchoolName();?>/school_id/<?php echo $block->getSchoolId();?>/seller_name/<?php echo $block->getFirstName();?>/category_id/<?php echo $category_id;?>"><?php echo $block->getBaseurl();?>creation/index/registerseller/seller_id/<?php echo $block->getIddata();?>/school_name/<?php echo $block->getSchoolName();?>/school_id/<?php echo $block->getSchoolId();?>/seller_name/<?php echo $block->getFirstName();?>/category_id/<?php echo $category_id;?></a></p>
+           <br>
+           <p>School ID : <?php echo $block->getSchoolId();?></p>
+           <p>School Name: <?php echo $block->getSchoolName();?></p>
+        </div>
+
+  
+                       
+        </div>
+		</div>
+		
+		<div class="seller_enterid">
+
+        <div class="fieldset create info">
+        	<legend class="legend"><span>2. Enter Email Address</span></legend><br>
+        	<p>Next, enter the email addresses of your friends and family.</p>
+
+        	<div class="field field-name-message required">
+	            <div class="control">
+	                <label>1</label>&nbsp;&nbsp;&nbsp;<input type="text" id="message" name="message1" value="" style="width:300px" title="First Name" class="input-text required-entry" data-validate="{required:true}" autocomplete="off" aria-required="true">
+	            </div>
+        	</div>
+        	<div class="field field-name-message required">
+	            <div class="control">
+	                <label>2</label>&nbsp;&nbsp;&nbsp;<input type="text" id="message" name="message2" value="" style="width:300px" title="First Name" class="input-text required-entry" data-validate="{required:true}" autocomplete="off" aria-required="true">
+	            </div>
+        	</div>
+        	<div class="field field-name-message required">
+	            <div class="control">
+	                <label>3</label>&nbsp;&nbsp;&nbsp;<input type="text" id="message" name="message3" value="" style="width:300px" title="First Name" class="input-text required-entry" data-validate="{required:true}" autocomplete="off" aria-required="true">
+	            </div>
+        	</div>
+        	<div class="field field-name-message required">
+	            <div class="control">
+	                <label>4</label>&nbsp;&nbsp;&nbsp;<input type="text" id="message" name="message4" value="" style="width:300px" title="First Name" class="input-text required-entry" data-validate="{required:true}" autocomplete="off" aria-required="true">
+	            </div>
+        	</div>
+        	<div class="field field-name-message required">
+	            <div class="control">
+	                <label>5</label>&nbsp;&nbsp;&nbsp;<input type="text" id="message" name="message5" value="" style="width:300px" title="First Name" class="input-text required-entry" data-validate="{required:true}" autocomplete="off" aria-required="true">
+	            </div>
+        	</div>
+        	<div class="field field-name-message required">
+	            <div class="control">
+	                <label>6</label>&nbsp;&nbsp;&nbsp;<input type="text" id="message" name="message6" value="" style="width:300px" title="First Name" class="input-text required-entry" data-validate="{required:true}" autocomplete="off" aria-required="true">
+	            </div>
+        	</div>
+        	<div class="field field-name-message required">
+	            <div class="control">
+	                <label>7</label>&nbsp;&nbsp;&nbsp;<input type="text" id="message" name="message7" value="" style="width:300px" title="First Name" class="input-text required-entry" data-validate="{required:true}" autocomplete="off" aria-required="true">
+	            </div>
+        	</div>
+        	<div class="field field-name-message required">
+	            <div class="control">
+	                <label>8</label>&nbsp;&nbsp;&nbsp;<input type="text" id="message" name="message8" value="" style="width:300px" title="First Name" class="input-text required-entry" data-validate="{required:true}" autocomplete="off" aria-required="true">
+	            </div>
+        	</div>
+        	<div class="field field-name-message required">
+	            <div class="control">
+	                <label>9</label>&nbsp;&nbsp;&nbsp;<input type="text" id="message" name="message9" value="" style="width:300px" title="First Name" class="input-text required-entry" data-validate="{required:true}" autocomplete="off" aria-required="true">
+	            </div>
+        	</div>
+        	<div class="field field-name-message required">
+	            <div class="control">
+	                <label>10</label>&nbsp;&nbsp;&nbsp;<input type="text" id="message" name="message10" value="" style="width:300px" title="First Name" class="input-text required-entry" data-validate="{required:true}" autocomplete="off" aria-required="true">
+	            </div>
+        	</div>
+
+
+        	<div class="actions-toolbar">
+        		<div class="primary">
+            		<button type="submit" class="action submit primary" title="Create an Account"><span>Send</span></button>
+        		</div>
+    		</div>
+
+        </div>
+		</div>
+</form>

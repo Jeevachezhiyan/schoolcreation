@@ -1,0 +1,43 @@
+<div class="seller_page_lt center_al">
+
+
+
+
+<div class="seller_registerd">
+<form class="form create account form-create-account" action="<?php echo $block->getBaseurl();?>creation/index/shoplogin/" method="post" id="form-validate2" enctype="multipart/form-data" autocomplete="off" novalidate="novalidate">
+    <fieldset class="fieldset create info">
+        <legend class="legend"><span>Please Enter Seller ID to Proceed the Shopping</span></legend><br>
+        <p></p>
+        <div class="field field-name-firstname required">
+            <label class="label" for="firstname">
+                <span>Seller ID</span>
+            </label>
+
+            <div class="control">
+                <input type="text" id="firstname" name="seller_id" value="" title="First Name" class="input-text required-entry" data-validate="{required:true}" autocomplete="off" aria-required="true">
+				<button type="submit" class="action submit primary" title="Create an Account"><span>Go</span></button>
+            </div>
+        </div>
+  
+                       
+        </fieldset>
+</form>
+</div>
+</div>
+
+
+<script>
+require([
+    'jquery',
+    'mage/mage'
+], function($){
+
+    var dataForm = $('#form-validate2');
+    var ignore = null;
+    
+    dataForm.mage('validation', {
+            ignore: ignore ? ':hidden:not(' + ignore + ')' : ':hidden'
+        }).find('input:text').attr('autocomplete', 'off');
+
+});
+</script>

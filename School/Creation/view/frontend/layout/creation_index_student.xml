@@ -1,0 +1,43 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="../../../../../../../lib/internal/Magento/Framework/View/Layout/etc/page_configuration.xsd">
+
+	<head>
+        
+         
+		<css src="School_Creation::css/css.css"/>
+		<script src="School_Creation::js/js.js"/>
+		<!-- <css src="jquery/fileUploader/css/jquery.fileupload-ui.css"/>
+		     		<script src="path/file.js" defer="defer"/> -->
+		<!-- <link src="http://url.com" src_type="url"/>
+		     		<remove src="path/remove/file.css"/> -->
+
+		
+    </head> 
+
+    <body>
+
+
+        <referenceContainer name="sidebar.main">
+            <block class="School\Creation\Block\Index\Sidebar" name="creation_index_sidebar" before="-" template="School_Creation::creation_index_sidebar.phtml"/>
+        </referenceContainer>
+
+   <!--      <referenceContainer name="page.messages">
+                         <block class="Magento\Framework\View\Element\Template" name="ajax.message.placeholder" template="Magento_Theme::html/messages.phtml"/>
+            <block class="Magento\Framework\View\Element\Messages" name="messages" as="messages" template="Magento_Theme::messages.phtml"/>
+        </referenceContainer> -->
+
+
+          <referenceContainer name="page.messages">
+            <block class="Magento\Framework\View\Element\Messages" name="messages" as="messages"/>
+        </referenceContainer>
+
+        
+      <!--   <referenceContainer name="page.messages">
+                         <block class="School\Creation\Block\Message" name="school.creation.message"/>
+        </referenceContainer> -->
+        <referenceContainer name="content">
+            <block class="School\Creation\Block\Index\Student" name="creation_index_student" template="School_Creation::creation_index_student.phtml" cacheable="false"/>
+        </referenceContainer>
+
+
+    </body>
+</page>

@@ -1,0 +1,273 @@
+
+/************* 21.06.2017 **********/
+
+/************* 22.06.2017 ***********/
+
+
+.seller_page_lt {
+    float: left;
+    padding-right: 25px;
+    width: 50%;
+}
+.seller_page_rt {
+    float: left;
+    padding-left: 25px;
+    width: 50%;
+}
+
+.seller_page_lt .form.create.account.form-create-account {
+    background: #efefef;
+    margin-bottom: 20px;
+    min-width: inherit !important;
+    padding: 15px;
+    width: 100%;
+}
+.seller_page_lt .input-text.required-entry {
+    border-radius: 3px 0 0 3px;
+    float: left;
+    height: 42px;
+    max-width: 100%;
+    width: 100%;
+    padding-right: 63px;
+}
+.seller_page_lt .control {
+    float: left;
+    position: relative;
+    width: 100%;
+}
+.seller_page_lt a.action.primary, .seller_page_lt .action.primary { border-radius: 0 3px 3px 0; height: 42px; position: absolute; right: 0; }
+
+.seller_page_rt .control {
+    text-align: center;
+}
+.seller_page_rt .input-text.required-entry {
+    display: inline-block;
+    float: none;
+    margin: 0 auto;
+    width: 75%;
+}
+.seller_page_rt .actions-toolbar {
+    text-align: center;
+}
+.seller_page_rt .actions-toolbar .primary {
+    float: none;
+    margin: 15px 0 0;
+}
+.seller_page_rt .actions-toolbar .submit.primary {
+    float: none;
+    margin: 0 auto;
+    padding: 10px 40px;
+}
+
+.seller_page_rt_inner {
+    background: rgb(247, 169, 66) none repeat scroll 0 0;
+    padding: 50px;
+    text-align: center;
+}
+.seller_page_rt_inner .form.create.account.form-create-account {
+    min-width: inherit;
+    width: 100%;
+}
+.seller_page_rt_inner .create.info {
+    margin: 0 0 10px;
+}
+.seller_page_rt_inner > h2 {
+    color: rgb(255, 255, 255);
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+.seller_page_rt_inner h3 {
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+.seller_page_rt_inner > p {
+    color: rgb(255, 255, 255);
+    margin-bottom: 35px;
+}
+
+input[type="text"]::-moz-placeholder, input[type="password"]::-moz-placeholder, input[type="url"]::-moz-placeholder, input[type="tel"]::-moz-placeholder, input[type="search"]::-moz-placeholder, input[type="number"]::-moz-placeholder, input[type="datetime"]::-moz-placeholder, input[type="email"]::-moz-placeholder {
+    color: rgb(0, 0, 0) !important;
+}
+
+.block.newsletter input[type="email"]::-moz-placeholder { color: #fff !important; }
+
+.create_schoolAcc {
+    background: #efefef;
+    float: left;
+    padding: 15px;
+}
+h1.page-title { margin-bottom: 20px;}
+.fieldset.create.info {
+    margin-bottom: 10px;
+}
+
+.create_schoolAcc .actions-toolbar { margin-bottom: 15px;}
+
+
+
+
+.student_login_lt {
+    float: left;
+    padding-right: 25px;
+    width: 50%;
+}
+.student_login_lt .form.create.account.form-create-account {
+    background: #efefef;
+    min-width: inherit;
+    padding: 15px;
+    width: 100%;
+}
+.student_login_rt {
+    float: left;
+    padding-left: 25px;
+    width: 50%;
+}
+.student_login_rt .form.create.account.form-create-account {
+    background: #efefef;
+    min-width: inherit;
+    padding: 15px;
+    width: 100%;
+}
+
+#form-validate .field:last-child { margin-bottom: 10px;}
+.page-main { padding-bottom: 50px;}
+
+.seller_createid {
+    float: left;
+    padding-right: 25px;
+    width: 50%;
+}
+.header.content.navbar-fixed-top .logo img.logo-small {
+    display: inline-block;
+    vertical-align: top;
+    width: 150px !important;
+}
+.seller_enterid {
+    float: left;
+    padding-left: 25px;
+    width: 50%;
+}
+.seller_enterid .control > label {
+    float: left;
+    width: 20px;
+}
+
+.seller_enterid .fieldset.create.info {
+    background: rgb(239, 239, 239) none repeat scroll 0 0;
+    padding: 15px;
+}
+
+.seller_enterid .action.submit.primary {
+    margin-bottom: 15px;
+    margin-left: 30px;
+}
+.seller_createid .label {
+    float: left;
+    width: 100px;
+}
+.seller_createid input {
+    float: left;
+    width: 375px !important;
+}
+.seller_createid .fieldset.create.info {
+    padding-top: 15px;
+}
+.form-inline.seller {
+    float: left;
+    margin-top: 20px;
+    width: 100%;
+}
+.seller_createid .field {
+    float: left;
+    width: 100%;
+}
+.seller_createid textarea {
+    width: 375px !important;
+}
+
+.highlight_txt {
+    color: #e29126;
+}
+.seller_createid .field.automsg label {
+    float: left;
+    font-weight: bold;
+    width: 100%;
+}
+.order_history {
+    float: left;
+    width: 100%;
+  background: #efefef;
+  padding: 3px;
+  
+}
+.order_history table {
+    background: rgb(221, 221, 221) none repeat scroll 0 0;
+}
+.order_history th {
+    border: 1px solid rgb(239, 239, 239);
+    text-align: center;
+  font-weight: 600;
+}
+
+
+/*
+.modal-popup .modal-header { padding: 0 !important; }
+.modal-slide .modal-inner-wrap, .modal-popup .modal-inner-wrap { background: transparent !important; box-shadow: none !important;}
+.modal-footer { display: none;}
+.modal-popup._inner-scroll .modal-content { overflow: hidden !important;}*/
+
+/********* 22.06.2017 ***********/
+
+.broucherspopup .modal-inner-wrap {
+ background: #000;
+}
+.broucherspopup.modal-popup .modal-footer {
+ border-top: none !important;
+}
+
+
+
+/********* 29.06.2017 ***********/
+
+.createNewcustomer form { width: 100% !important;}
+.createNewcustomer .create_pers_info { float: left; width: 50%; padding-right: 25px;}
+.createNewcustomer .create_signin { float: left; width: 50%; padding-left: 25px; }
+.createNewcustomer .fieldset.create.info { float: left; width: 100%; padding: 15px; background: #efefef;}
+.createNewcustomer .fieldset.create.account { float: left; width: 100%; padding: 15px; background: #efefef; }
+.fieldset > .legend { border-bottom: 2px solid rgb(247, 169, 66);}
+.login-container .block.block-customer-login {
+    background: #efefef;
+    padding: 15px;
+} 
+.login-container .block.block-new-customer {
+    background: #efefef;
+    padding: 15px;
+}
+
+/*********** 30.06.2017 **********/
+
+p.online_txt { word-wrap: break-word;} 
+.em-block-content .col-sm-12 { padding: 0; width: 100%;}
+.footer-top .row { margin: 0 !important}
+.footer-top .col-md-4:nth-child(2) {
+    padding: 0 0 0 100px;
+}
+.seller_page_lt .view_online .form.create.account.form-create-account { margin-bottom: 0;}
+
+.brochercontent .pfblock-title {
+    margin-top: 55px;
+}
+
+
+/**************21.07.2017 ************/
+.create_schoolAcc { width: 100% !important;}
+.create_schoolAcc .create.info .field {
+    float: left;
+    width: 49%;
+}
+.create_schoolAcc .create.info .field:nth-of-type(even) { float: right; }
+.create_schoolAcc .form-create-account { width: 100% !important;}
+
+
+/**************21.07.2017 ************/

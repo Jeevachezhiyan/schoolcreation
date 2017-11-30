@@ -1,0 +1,168 @@
+
+<div class="student_login_lt">
+<form class="form create account form-create-account" action="<?php echo $block->getBaseurl();?>creation/index/sellercreate/" method="post" id="form-validate" enctype="multipart/form-data" autocomplete="off" novalidate="novalidate">
+    <div class="fieldset create info">
+        <legend class="legend"><span>STUDENT REGISTRATION</span></legend><br>
+        <p>Please enter the student's name as it appears on the order form.</p>
+        
+        
+        <div class="field field-name-firstname required">
+<div class="control">
+              <p><b></b>Students must register to sell online. Go to “Register Student”, fill in the form and submit it. You will receive a confirmation via email that your student has been registered to sell online. Make sure you have your School / Organization code handy!</p>
+            </div>
+
+            <label class="label" for="firstname">
+                <span>Student ID</span>
+            </label>
+
+            <div class="control">
+                <input type="text" id="sellerid" name="seller_id" value="" title="First Name" class="input-text required-entry" data-validate="{required:true}" autocomplete="off" aria-required="true">
+            </div>
+        </div>
+
+
+        <div class="field field-name-firstname required">
+            <label class="label" for="firstname">
+                <span>Student's First Name</span>
+            </label>
+
+            <div class="control">
+                <input type="text" id="firstname" name="firstname" value="" title="First Name" class="input-text required-entry" data-validate="{required:true}" autocomplete="off" aria-required="true">
+            </div>
+        </div>
+
+        <div class="field field-name-firstname required">
+            <label class="label" for="firstname">
+                <span>Student's Last Name</span>
+            </label>
+
+            <div class="control">
+                <input type="text" id="lastname" name="lastname" value="" title="Last Name" class="input-text required-entry" data-validate="{required:true}" autocomplete="off" aria-required="true">
+            </div>
+        </div>
+
+
+        <div class="field field-name-firstname required">
+            <label class="label" for="firstname">
+                <span>Student's Email</span>
+            </label>
+
+            <div class="control">
+                <input type="text" id="firstname" name="email" value="" title="Email" class="input-text required-entry" data-validate="{required:true}" autocomplete="off" aria-required="true">
+            </div>
+        </div>
+
+         <div class="field field-name-firstname required">
+            <div class="control">
+                <input type="hidden" id="" name="school_id" value="<?php echo $this->getIddata();?>" title="Email" class="input-text required-entry" data-validate="{required:false}" autocomplete="off" aria-required="true">
+            </div>
+        </div>
+
+
+        <div class="field field-name-firstname required">
+            <label class="label" for="firstname">
+                <span>Grade/Teacher</span>
+            </label>
+
+            <div class="control">
+                <input type="text" id="firstname" name="grade" value="" title="Grade" class="input-text required-entry" data-validate="{required:true}" autocomplete="off" aria-required="true">
+            </div>
+        </div>
+  
+                       
+        </div>
+
+    <div class="actions-toolbar">
+        <div class="primary">
+            <button type="submit" class="action submit primary" title="Create an Account"><span>Create Student</span></button>
+        </div>
+    </div>
+</form>
+</div>
+   
+       
+
+<!-- class="student_login_rt">
+ <div class="field field-name-firstname required">
+            <div class="control">
+              <p><b></b>Students must register to sell online. Go to “Register Student”, fill in the form and submit it. You will receive a confirmation via email that your student has been registered to sell online. Make sure you have your School / Organization code handy!</p>
+            </div>
+</div>
+<form class="form create account form-create-account" action="<?php echo $block->getBaseurl();?>creation/index/studentcreate/" method="post" id="form-validate" enctype="multipart/form-data" autocomplete="off" novalidate="novalidate">
+
+    <div class="fieldset create info">
+        <legend class="legend"><span>STUDENT REGISTRATION</span></legend><br>
+        <p>Please Fill the Student Details</p>
+        
+        
+        <div class="field field-name-firstname required">
+            <label class="label" for="firstname">
+                <span>Student ID</span>
+            </label>
+
+            <div class="control">
+                <input type="text" id="sellerid" name="student_id" value="" title="First Name" class="input-text required-entry" data-validate="{required:true}" autocomplete="off" aria-required="true">
+            </div>
+        </div>
+
+
+        <div class="field field-name-firstname required">
+            <label class="label" for="firstname">
+                <span>Student Name</span>
+            </label>
+
+            <div class="control">
+                <input type="text" id="firstname" name="student_name" value="" title="First Name" class="input-text required-entry" data-validate="{required:true}" autocomplete="off" aria-required="true">
+            </div>
+        </div>
+
+        <div class="field field-name-firstname required">
+            <div class="control">
+                <input type="hidden" id="" name="school_id" value="<?php echo $this->getIddata();?>" title="Email" class="input-text required-entry" data-validate="{required:false}" autocomplete="off" aria-required="true">
+            </div>
+        </div>     
+
+        <div class="field field-name-firstname required">
+            <label class="label" for="firstname">
+                <span>Student Email</span>
+            </label>
+
+            <div class="control">
+                <input type="text" id="lastname" name="student_email" value="" title="Last Name" class="input-text required-entry" data-validate="{required:true}" autocomplete="off" aria-required="true">
+            </div>
+        </div>      
+        </div>
+    <div class="actions-toolbar">
+        <div class="primary">
+            <button type="submit" class="action submit primary" title="Create an Account"><span>Create Student</span></button>
+        </div>
+    </div>
+</form>
+</div>-->
+
+
+
+
+
+
+
+
+<script>
+require([
+    'jquery',
+    'mage/mage'
+], function($){
+
+    var dataForm = $('#form-validate');
+    var ignore = null;
+    
+    dataForm.mage('validation', {
+            ignore: ignore ? ':hidden:not(' + ignore + ')' : ':hidden'
+        }).find('input:text').attr('autocomplete', 'off');
+
+});
+</script>
+
+
+
+</div>

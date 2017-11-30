@@ -1,0 +1,22 @@
+
+
+<?php
+$category_url = $block->getCategoryCollection();
+$category_id  = implode(",",$category_url);
+
+$base_url = $block->getBaseurl();
+$seller_id = $block->getIddata();
+$school_name = $block->getSchoolName();
+$school_id = $block->getSchoolId();
+$seller_name = $block->getFirstName();
+
+header("Location: ".$base_url."creation/index/registerseller/seller_id/".$seller_id."/school_name/".$school_name."/school_id/".$school_id."/seller_name/".$seller_name."/category_id/".$category_id."");
+?>
+
+
+
+
+
+
+
+       

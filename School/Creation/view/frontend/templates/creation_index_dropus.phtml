@@ -1,0 +1,87 @@
+<div class="dropus-form">
+    <form class="form create account form-create-account" action="<?php echo $block->getBaseurl();?>creation/index/dropusmail/" method="post" id="form-validate" enctype="multipart/form-data" autocomplete="off" novalidate="novalidate">
+    <div class="fieldset create info">
+        <h2 class="pfblock-title">Drop us a line</h2>
+        
+        <legend class="legend"><span>Call (800-333-3863), email (customercare@shhealthychoice.com)</span></legend><br>
+        <div class="pfblock-subtitle">Please fill out the contact form below:</div><br>
+
+
+        <div class="field field-name-firstname required">
+            <label class="label" for="firstname">
+                <span>Name</span>
+            </label>
+
+            <div class="control">
+                <input type="text" id="firstname" name="name" value="" title="First Name" class="input-text required-entry" data-validate="{required:true}" autocomplete="off" aria-required="true">
+            </div>
+        </div>
+
+         <div class="field field-name-firstname required">
+            <label class="label" for="firstname">
+                <span>Email</span>
+            </label>
+
+            <div class="control">
+                <input type="text" id="email" name="email" value="" title="Email" class="input-text required-entry" data-validate="{required:true, 'validate-email':true}" autocomplete="off" aria-required="true">
+            </div>
+        </div>
+
+        <div class="field field-name-firstname required">
+            <label class="label" for="firstname">
+                <span>Phone</span>
+            </label>
+
+            <div class="control">
+                <input type="text" id="phone" name="phone" value="" title="Phone" class="input-text required-entry" data-validate="{'validate-number':true}" autocomplete="off" aria-required="true">
+            </div>
+        </div>
+
+         <div class="field field-name-firstname required">
+            <label class="label" for="firstname">
+                <span>Comments</span>
+            </label>
+
+            <div class="control">
+                <textarea  id="message" name="message" value="" title="First Name" class="input-text required-entry" data-validate="{required:true}" autocomplete="off" aria-required="true"></textarea>
+            </div>
+        </div>
+        <div>
+            <input type="hidden" name="url" value="<?php $block->getBaseurl();?>">
+        </div>
+  
+                       
+        </div>
+
+    <div class="actions-toolbar">
+        <div class="primary">
+            <button type="submit" class="action submit primary" title="Create an Account"><span>SEND MESSAGE</span></button>
+        </div>
+    </div>
+    </form>
+</div>
+
+
+
+
+
+
+<script>
+require([
+    'jquery',
+    'mage/mage'
+], function($){
+
+    var dataForm = $('#form-validate');
+    var ignore = null;
+    
+    dataForm.mage('validation', {
+            ignore: ignore ? ':hidden:not(' + ignore + ')' : ':hidden'
+        }).find('input:text').attr('autocomplete', 'off');
+
+});
+</script>
+
+
+
+</div>
